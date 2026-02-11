@@ -8,7 +8,7 @@ import ProductShowcase from './components/ProductShowcase';
 import Testimonial from './components/Testimonial';
 import TargetAudience from './components/TargetAudience';
 import TechnicalSpecs from './components/TechnicalSpecs';
-import ContactForm from './components/ContactForm';
+
 import Footer from './components/Footer';
 import BenefitsPage from './pages/BenefitsPage';
 import TechnicalPage from './pages/TechnicalPage';

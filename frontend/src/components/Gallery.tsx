@@ -186,7 +186,7 @@ const Gallery: React.FC = () => {
     }
   ];
 
-  const categories = ['all', 'indoor', 'agriculture', 'process', 'greenhouse', 'tutorial', 'testimonial', 'results', 'sustainability'];
+
   const [activeCategory, setActiveCategory] = useState('all');
 
   const filteredItems = activeCategory === 'all' 

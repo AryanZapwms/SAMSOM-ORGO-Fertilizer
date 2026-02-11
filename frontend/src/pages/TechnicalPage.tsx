@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+
 import TechnicalSpecs from '../components/TechnicalSpecs';
 import Footer from '../components/Footer';
 
