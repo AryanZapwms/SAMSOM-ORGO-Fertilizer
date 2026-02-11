@@ -14,6 +14,7 @@ const Navbar: React.FC = () => {
   const navigationLinks = [
     { to: "/benefits", label: t('nav.benefits') },
     { to: "/about", label: t('nav.ourStory') },
+    { to: "/gallery", label: t('nav.gallery') },
     { to: "/specifications", label: t('nav.specifications') },
     { to: "/contact", label: t('nav.contact') }
   ];
@@ -25,7 +26,7 @@ const Navbar: React.FC = () => {
         <Link to="/" className="flex items-center gap-2" onClick={closeMobileMenu}>
           <img 
             src={logo} 
-            alt="Nourish Plants Logo" 
+            alt="SAMSON ORGO Plants Logo" 
             className="h-22 w-auto" 
             style={{ maxWidth: '150px' }}
           />

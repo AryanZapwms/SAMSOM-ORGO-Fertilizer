@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
             <div className="flex items-center gap-2 mb-6">
               <span className="material-icons text-primary text-3xl">eco</span>
               <span className="text-xl font-extrabold tracking-tight text-white uppercase">
-                Nourish
+                SAMSON ORGO
               </span>
             </div>
             
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <span className="material-icons text-primary text-sm">email</span>
-                <span>hello@nourishplants.com</span>
+                <span>hello@SAMSON ORGOplants.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="material-icons text-primary text-sm">phone</span>

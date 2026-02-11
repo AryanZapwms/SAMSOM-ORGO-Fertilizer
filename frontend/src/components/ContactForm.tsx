@@ -160,7 +160,7 @@ const ContactForm: React.FC = () => {
           <div className="p-6 bg-white dark:bg-emerald-950/30 rounded-xl">
             <span className="material-icons text-primary text-3xl mb-4">email</span>
             <h4 className="font-bold text-lg mb-2">{t('contact.info.emailTitle')}</h4>
-            <p className="text-emerald-800/60 dark:text-emerald-100/40">hello@nourishplants.com</p>
+            <p className="text-emerald-800/60 dark:text-emerald-100/40">hello@SAMSON ORGOplants.com</p>
           </div>
           
           <div className="p-6 bg-white dark:bg-emerald-950/30 rounded-xl">

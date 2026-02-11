@@ -103,8 +103,8 @@ const ContactPage: React.FC = () => {
                     <div>
                       <h3 className="font-bold text-lg mb-1 text-emerald-900 dark:text-white">{t('contact.info.email.title')}</h3>
                       <p className="text-emerald-800/70 dark:text-emerald-100/60">
-                        hello@nourishplants.com<br />
-                        sales@nourishplants.com
+                        hello@SAMSON ORGOplants.com<br />
+                        sales@SAMSON ORGOplants.com
                       </p>
                     </div>
                   </div>

@@ -48,7 +48,7 @@ const createEmailTemplate = (data) => {
       <div class="container">
         <div class="header">
           <h1>New Contact Form Submission</h1>
-          <p>From Nourish Plants Website</p>
+          <p>From SAMSON ORGO Plants Website</p>
         </div>
         <div class="content">
           <div class="field">
@@ -98,7 +98,7 @@ app.post("/api/contact", async (req, res) => {
 
     // Create email content
     const mailOptions = {
-      from: `"Nourish Plants Contact" <${process.env.EMAIL_USER}>`,
+      from: `"SAMSON ORGO Plants Contact" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_TO || process.env.EMAIL_USER,
       replyTo: email,
       subject: `Contact Form: ${subject}`,
@@ -117,9 +117,9 @@ app.post("/api/contact", async (req, res) => {
 
     // Send auto-reply to user
     const userMailOptions = {
-      from: `"Nourish Plants" <${process.env.EMAIL_USER}>`,
+      from: `"SAMSON ORGO Plants" <${process.env.EMAIL_USER}>`,
       to: email,
-      subject: "Thank you for contacting Nourish Plants!",
+      subject: "Thank you for contacting SAMSON ORGO Plants!",
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background-color: #11d411; color: white; padding: 30px; text-align: center;">
@@ -127,12 +127,12 @@ app.post("/api/contact", async (req, res) => {
           </div>
           <div style="padding: 30px; background-color: #f9f9f9;">
             <p>Dear ${name},</p>
-            <p>Thank you for reaching out to Nourish Plants. We have received your message and our team will get back to you within 24-48 hours.</p>
+            <p>Thank you for reaching out to SAMSON ORGO Plants. We have received your message and our team will get back to you within 24-48 hours.</p>
             <p><strong>Your Message:</strong></p>
             <p style="background-color: white; padding: 15px; border-left: 4px solid #11d411;">
               ${message}
             </p>
-            <p>Best regards,<br/>The Nourish Plants Team</p>
+            <p>Best regards,<br/>The SAMSON ORGO Plants Team</p>
           </div>
         </div>
       `,

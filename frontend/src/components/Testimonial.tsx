@@ -30,13 +30,13 @@ const Testimonial: React.FC = () => {
               </p>
               
               <div className="flex flex-col items-center">
-                <div className="w-16 h-16 rounded-full border-4 border-primary overflow-hidden mb-4">
+                {/* <div className="w-16 h-16 rounded-full border-4 border-primary overflow-hidden mb-4">
                   <img
                     className="w-full h-full object-cover"
                     alt="Portrait of a smiling young woman"
                     src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
                   />
-                </div>
+                </div> */}
                 
                 <h4 className="font-bold text-lg">{t('testimonial.author')}</h4>
                 <p className="text-sm text-emerald-800/40 dark:text-emerald-100/40">

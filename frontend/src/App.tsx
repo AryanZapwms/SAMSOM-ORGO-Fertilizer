@@ -15,6 +15,7 @@ import TechnicalPage from './pages/TechnicalPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import FloatingButtons from './components/FloatingButtons';
+import GalleryPage from './pages/GallaryPage';
 
 function HomePage() {
   return (
@@ -25,7 +26,7 @@ function HomePage() {
       <ProductShowcase />
       <TechnicalSpecs />
       <Testimonial />
-      <ContactForm />
+      {/* <ContactForm /> */}
       <Footer /> {/* Footer moved here for homepage */}
     </>
   );
@@ -68,6 +69,7 @@ function App() {
             <Route path="/specifications" element={<TechnicalPage />} />
             <Route path="/about" element={<AboutPage />} /> 
             <Route path="/contact" element={<ContactPage />} />
+              <Route path="/gallery" element={<GalleryPage />} />
           </Routes>
           
           <FloatingButtons 

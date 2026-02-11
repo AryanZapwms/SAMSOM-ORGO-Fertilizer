@@ -1,8 +1,18 @@
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { useNavigate } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
+
+  const handleLearnMore = () => {
+    navigate('/about'); 
+  };
+
+  const handleContactUs = () => {
+    navigate('/contact');
+  };
 
   return (
     <header className="relative w-full min-h-[85vh] flex items-center overflow-hidden">
@@ -31,10 +41,10 @@ const Hero: React.FC = () => {
           </p>
           
           <div className="flex flex-wrap gap-4">
-            <button className="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-xl font-extrabold text-lg transition-all shadow-xl shadow-primary/30 flex items-center gap-2">
+            <button onClick={handleLearnMore} className="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-xl font-extrabold text-lg transition-all shadow-xl shadow-primary/30 flex items-center gap-2">
               {t('hero.learnMore')} <span className="material-icons">arrow_forward</span>
             </button>
-            <button className="bg-emerald-950/5 dark:bg-white/10 hover:bg-primary/10 border border-emerald-950/10 dark:border-white/10 px-10 py-4 rounded-xl font-extrabold text-lg transition-all backdrop-blur-sm">
+            <button onClick={handleContactUs} className="bg-emerald-950/5 dark:bg-white/10 hover:bg-primary/10 border border-emerald-950/10 dark:border-white/10 px-10 py-4 rounded-xl font-extrabold text-lg transition-all backdrop-blur-sm">
               {t('hero.contactUs')}
             </button>
           </div>

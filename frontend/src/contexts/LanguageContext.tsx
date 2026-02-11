@@ -5,7 +5,7 @@ type Language = 'en' | 'mr';
 interface LanguageContextType {
   language: Language;
   toggleLanguage: () => void;
-  t: (key: string) => string;
+  t: (key: string, defaultValue?: string) => string;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -21,8 +21,8 @@ const translations = {
     
     // Hero Section
     'hero.tagline': '100% Organic Earth-Friendly',
-    'hero.title': 'Nourish Your',
-    'hero.titleHighlight': 'Plants Naturally',
+    'hero.title': 'SAMSON ORGO',
+    'hero.titleHighlight': 'Where Nature Meets Growth',
     'hero.description': 'Premium organic vermicompost crafted for sustainable growth and vibrant indoor gardens. Give your leafy friends the nutrients they deserve.',
     'hero.learnMore': 'Learn More',
     'hero.contactUs': 'Contact Us',
@@ -38,7 +38,7 @@ const translations = {
     'target.pots': 'Pots',
     
     // Benefits Summary (Section)
-    'benefits.title': 'Why Choose Nourish?',
+    'benefits.title': 'Why Choose SAMSON ORGO?',
     'benefits.description': 'We believe in working with nature, not against it. Our vermicompost is designed to rejuvenate your soil from the inside out.',
     'benefits.viewAll': 'View all benefits',
     'benefits.organic.title': '100% Organic',
@@ -54,7 +54,7 @@ const translations = {
     'detailed.title': 'Comprehensive Benefits of Vermicompost',
     'detailed.description': 'Unlike chemical fertilizers that provide temporary nutrition, vermicompost improves overall soil health and delivers long-term benefits for sustainable plant growth.',
     'detailed.fertility.title': 'Improves Soil Fertility',
-    'detailed.fertility.desc': 'Enriches soil with essential macro and micronutrients that are released slowly, ensuring continuous nourishment without nutrient loss or soil degradation.',
+    'detailed.fertility.desc': 'Enriches soil with essential macro and micronutrients that are released slowly, ensuring continuous SAMSON ORGOment without nutrient loss or soil degradation.',
     'detailed.structure.title': 'Enhances Soil Structure',
     'detailed.structure.desc': 'Increases soil porosity for better air circulation and root penetration. Improves water-holding capacity in sandy soils and reduces compaction in clay soils.',
     'detailed.microbial.title': 'Boosts Microbial Activity',
@@ -74,6 +74,30 @@ const translations = {
     'detailed.cta.desc2': 'Scientifically proven to satisfy all parameters required for both growth promotion and plant protection. An excellent fit for farmers seeking sustainable, high-yield solutions.',
     'detailed.premium': 'Premium Quality',
     'detailed.lab': 'Lab Certified & Verified',
+
+
+// Add to English translations object
+'gallery.title': 'Our Gallery',
+'gallery.subtitle': 'Explore visual stories of growth, sustainability, and success with our organic fertilizer',
+'gallery.category.all': 'All',
+'gallery.category.indoor': 'Indoor',
+'gallery.category.agriculture': 'Agriculture',
+'gallery.category.process': 'Process',
+'gallery.category.greenhouse': 'Greenhouse',
+'gallery.category.tutorial': 'Tutorial',
+'gallery.category.testimonial': 'Testimonial',
+'gallery.category.results': 'Results',
+'gallery.category.sustainability': 'Sustainability',
+'gallery.upload.title': 'Share Your Success!',
+'gallery.upload.description': 'Have photos or videos of your plants thriving with our fertilizer? Share them with our community!',
+'gallery.upload.button': 'Upload Media',
+'gallery.upload.guidelines': 'View Guidelines',
+'gallery.upload.note': 'Supports JPG, PNG, MP4 up to 50MB',
+'gallery.empty.title': 'No media found',
+'gallery.empty.message': 'Try selecting a different category',
+'gallery.type.image': 'Image',
+'gallery.type.video': 'Video',
+
     
     // Product Showcase
     'product.title': 'What is Vermicompost?',
@@ -87,7 +111,7 @@ const translations = {
     
     // Testimonials
     'testimonial.title': 'Loved by Plant Parents',
-    'testimonial.quote': '"I was about to give up on my Fiddle Leaf Fig. After just two applications of Nourish, I saw three new leaves sprout! It\'s actually magic for plants."',
+    'testimonial.quote': '"I was about to give up on my Fiddle Leaf Fig. After just two applications of SAMSON ORGO, I saw three new leaves sprout! It\'s actually magic for plants."',
     'testimonial.author': 'Sarah Jenkins',
     'testimonial.role': 'Verified Plant Enthusiast',
     
@@ -118,7 +142,7 @@ const translations = {
     'footer.newsletter': 'Newsletter',
     'footer.newsletterText': 'Get plant care tips and exclusive offers.',
     'footer.emailPlaceholder': 'Your Email',
-    'footer.copyright': '© {year} Nourish Plants. All rights reserved.',
+    'footer.copyright': '© {year} SAMSON ORGO Plants. All rights reserved.',
     'footer.privacy': 'Privacy Policy',
     'footer.terms': 'Terms of Service',
     
@@ -134,7 +158,7 @@ const translations = {
     'about.whatIs.p2': 'Often called "black gold," this humus-like material improves soil structure, enhances water retention, and provides essential, balanced nutrients for stronger plant growth and higher yields.',
     'about.whyInSoil.title': 'Why Vermicompost is Used in Soil',
     'about.whyInSoil.item1.title': 'Improves Soil Fertility',
-    'about.whyInSoil.item1.desc': 'Enriches soil with essential macro and micronutrients that are released slowly, ensuring continuous nourishment without nutrient loss.',
+    'about.whyInSoil.item1.desc': 'Enriches soil with essential macro and micronutrients that are released slowly, ensuring continuous SAMSON ORGOment without nutrient loss.',
     'about.whyInSoil.item2.title': 'Enhances Soil Structure',
     'about.whyInSoil.item2.desc': 'Increases soil porosity for better air circulation and root penetration. Improves water-holding capacity in all soil types.',
     'about.whyInSoil.item3.title': 'Boosts Microbial Activity',
@@ -166,7 +190,7 @@ const translations = {
     'contact.info.social': 'Follow Us',
     'contact.form.title': 'Send us a Message',
     'contact.form.success': 'Thank you for your message! We\'ll get back to you within 24-48 hours.',
-    'contact.form.error': 'Something went wrong. Please try again or email us directly at hello@nourishplants.com',
+    'contact.form.error': 'Something went wrong. Please try again or email us directly at hello@SAMSON ORGOplants.com',
     'contact.form.name': 'Full Name *',
     'contact.form.email': 'Email Address *',
     'contact.form.phone': 'Phone Number',
@@ -198,6 +222,20 @@ const translations = {
     // Navbar
     'language.current': 'Language',
     'language.code': 'en',
+
+    // Add to English translations:
+'gallery.pageTitle': 'Gallery',
+'gallery.pageSubtitle': 'Visual stories of growth, sustainability, and success with our organic fertilizer',
+'gallery.stats.images': 'Images',
+'gallery.stats.videos': 'Videos',
+'gallery.stats.organic': 'Organic',
+'gallery.stats.access': 'Access',
+'gallery.info.title': 'Share Your Green Journey',
+'gallery.info.description': 'Our gallery is a community space where farmers and gardeners share their success stories. Join thousands of growers who have transformed their crops with Samson Orgo.',
+'gallery.info.learnMore': 'Learn More About Us',
+'gallery.info.contact': 'Contact for Media',
+'nav.gallery': 'Gallery',
+'nav.home': 'Back to Home',
   },
   
   mr: {
@@ -209,8 +247,8 @@ const translations = {
     
     // Hero Section
     'hero.tagline': '१००% सेंद्रिय पृथ्वी-स्नेही',
-    'hero.title': 'तुमच्या',
-    'hero.titleHighlight': 'वनस्पतींना नैसर्गिक पोषण द्या',
+    'hero.title': 'सॅमसन ऑर्गो',
+    'hero.titleHighlight': 'जिथे निसर्गातून होते समृद्ध वाढ',
     'hero.description': 'टिकाऊ वाढ आणि जीवंत इनडोअर बागांसाठी तयार केलेले प्रीमियम सेंद्रिय वर्मीकंपोस्ट. तुमच्या हिरव्या मित्रांना त्यांना हवे असलेले पोषण द्या.',
     'hero.learnMore': 'अधिक जाणून घ्या',
     'hero.contactUs': 'आमच्याशी संपर्क साधा',
@@ -226,7 +264,7 @@ const translations = {
     'target.pots': 'कुंड्या (Pots)',
     
     // Benefits Summary
-    'benefits.title': 'नूरिश का निवडा?',
+    'benefits.title': 'सॅमसन ऑर्गो का निवडा?',
     'benefits.description': 'आम्ही निसर्गाच्या विरोधात नाही, तर निसर्गासोबत काम करण्यावर विश्वास ठेवतो. आमचे वर्मीकंपोस्ट तुमच्या मातीचे आरोग्य आतून सुधारण्यासाठी बनवले आहे.',
     'benefits.viewAll': 'सर्व फायदे पहा',
     'benefits.organic.title': '१००% सेंद्रिय',
@@ -273,9 +311,32 @@ const translations = {
     'product.bullet3': 'बिनवासाचे आणि घरात वापरण्यास सोपे',
     'product.viewRange': 'उत्पादने पहा',
 
+
+    // Add to Marathi translations object  
+'gallery.title': 'आमची गॅलरी',
+'gallery.subtitle': 'आमच्या सेंद्रिय खताच्या वाढ, टिकाऊपणा आणि यशाच्या दृश्य कथा अन्वेषण करा',
+'gallery.category.all': 'सर्व',
+'gallery.category.indoor': 'इनडोअर',
+'gallery.category.agriculture': 'शेती',
+'gallery.category.process': 'प्रक्रिया',
+'gallery.category.greenhouse': 'ग्रीनहाऊस',
+'gallery.category.tutorial': 'ट्यूटोरियल',
+'gallery.category.testimonial': 'अनुभव',
+'gallery.category.results': 'निकाल',
+'gallery.category.sustainability': 'टिकाऊपणा',
+'gallery.upload.title': 'तुमचे यश शेअर करा!',
+'gallery.upload.description': 'तुमच्या झाडांच्या यशाची छायाचित्रे किंवा व्हिडिओ आहेत का? आमच्या समुदायासोबत शेअर करा!',
+'gallery.upload.button': 'मीडिया अपलोड करा',
+'gallery.upload.guidelines': 'मार्गदर्शक तत्त्वे पहा',
+'gallery.upload.note': 'JPG, PNG, MP4 (५० MB पर्यंत)',
+'gallery.empty.title': 'मीडिया सापडले नाही',
+'gallery.empty.message': 'दुसरी श्रेणी निवडण्याचा प्रयत्न करा',
+'gallery.type.image': 'छायाचित्र',
+'gallery.type.video': 'व्हिडिओ',
+
     // Testimonials
     'testimonial.title': 'ग्राहकांचे अनुभव',
-    'testimonial.quote': '"माझे फायडल लीफ फिग झाड जवळजवळ वाळले होते. नूरिश वापरल्यापासून त्याला नवीन पालवी फुटली आहे! हे झाडांसाठी खरोखर जादू आहे."',
+    'testimonial.quote': '"माझे फायडल लीफ फिग झाड जवळजवळ वाळले होते. सॅमसन ऑर्गो वापरल्यापासून त्याला नवीन पालवी फुटली आहे! हे झाडांसाठी खरोखर जादू आहे."',
     'testimonial.author': 'सारा जेन्किन्स',
     'testimonial.role': 'सत्यापित प्लांट प्रेमी',
 
@@ -306,7 +367,7 @@ const translations = {
     'footer.newsletter': 'वृत्तपत्रिका',
     'footer.newsletterText': 'झाडांच्या काळजीबद्दल टिप्स आणि विशेष ऑफर्स मिळवा.',
     'footer.emailPlaceholder': 'तुमचा ईमेल',
-    'footer.copyright': '© {year} नूरिश प्लांट्स. सर्व हक्क राखीव.',
+    'footer.copyright': '© {year} सॅमसन ऑर्गो प्लांट्स. सर्व हक्क राखीव.',
     'footer.privacy': 'गोपनीयता धोरण',
     'footer.terms': 'सेवा अटी',
     
@@ -386,6 +447,21 @@ const translations = {
     // Navbar
     'language.current': 'भाषा',
     'language.code': 'mr',
+    // English:
+    
+   // Add to Marathi translations:
+'gallery.pageTitle': 'गॅलरी',
+'gallery.pageSubtitle': 'आमच्या सेंद्रिय खताच्या वाढ, टिकाऊपणा आणि यशाच्या दृश्य कथा',
+'gallery.stats.images': 'छायाचित्रे',
+'gallery.stats.videos': 'व्हिडिओ',
+'gallery.stats.organic': 'सेंद्रिय',
+'gallery.stats.access': 'प्रवेश',
+'gallery.info.title': 'तुमचे हरित प्रवास शेअर करा',
+'gallery.info.description': 'आमची गॅलरी ही एक समुदाय जागा आहे जिथे शेतकरी आणि बागकाम करणारे त्यांच्या यशाच्या कथा शेअर करतात. हजारो लोकांमध्ये सामील व्हा ज्यांनी सॅमसन ऑर्गोसह त्यांची पिके बदलली आहेत.',
+'gallery.info.learnMore': 'आमच्याबद्दल अधिक जाणून घ्या',
+'gallery.info.contact': 'मीडियासाठी संपर्क करा',
+'nav.gallery': 'गॅलरी',
+'nav.home': 'मुख्य पृष्ठावर जा',
   }
 };
 
@@ -396,7 +472,7 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
     setLanguage(prev => prev === 'en' ? 'mr' : 'en');
   };
 
-  const t = (key: string): string => {
+  const t = (key: string, defaultValue?: string): string => {
     const langTranslations: Record<string, string> = translations[language];
     const translation = langTranslations[key];
     
@@ -405,7 +481,7 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
       return translation.replace('{year}', new Date().getFullYear().toString());
     }
     
-    return translation || key; // Return the key if translation not found
+    return translation || defaultValue || key; // Return translation, then defaultValue, then key
   };
 
   return (
