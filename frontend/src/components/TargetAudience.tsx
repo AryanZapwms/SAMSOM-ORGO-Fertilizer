@@ -10,7 +10,7 @@ const TargetAudience: React.FC = () => {
     {id: 3, name: t('target.flowers'), icon: 'local_florist' },
     {id: 4, name: t('target.lawns'), icon: 'yard' },
     {id: 5, name: t('target.nurseries'), icon: 'nature' },
-    {id: 6, name: t('target.pots'), icon: 'potted_plant1' }
+    // {id: 6, name: t('target.pots'), icon: 'potted_plant1' }
   ];
   
   return (
