@@ -117,7 +117,7 @@ const TechnicalSpecs: React.FC = () => {
         </div>
 
         {/* Certification Section */}
-        <div className="mt-16 pt-16 border-t border-emerald-200 dark:border-emerald-800/30">
+        <div className="mt-16 pt-16 border-t border-emerald-200 dark:border-emerald-800/30 dark:text-white">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div>
               <h3 className="text-2xl font-bold mb-4 text-emerald-900 dark:text-white">

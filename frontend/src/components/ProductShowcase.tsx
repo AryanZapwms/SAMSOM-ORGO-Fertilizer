@@ -17,7 +17,7 @@ const ProductShowcase: React.FC = () => {
             />
           </div>
           
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 dark:text-white">
             <h2 className="text-4xl font-extrabold mb-6">
               {t('product.secret')} <br />
               <span className="text-primary">{t('product.microbes')}</span>

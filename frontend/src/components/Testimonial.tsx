@@ -5,7 +5,7 @@ const Testimonial: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-24 bg-primary/5 relative">
+    <section className="py-24 bg-primary/5 relative dark:text-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold mb-2">{t('testimonial.title')}</h2>

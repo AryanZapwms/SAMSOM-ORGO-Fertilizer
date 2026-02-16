@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
             <button onClick={handleLearnMore} className="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-xl font-extrabold text-lg transition-all shadow-xl shadow-primary/30 flex items-center gap-2">
               {t('hero.learnMore')} <span className="material-icons">arrow_forward</span>
             </button>
-            <button onClick={handleContactUs} className="bg-emerald-950/5 dark:bg-white/10 hover:bg-primary/10 border border-emerald-950/10 dark:border-white/10 px-10 py-4 rounded-xl font-extrabold text-lg transition-all backdrop-blur-sm">
+            <button onClick={handleContactUs} className="bg-emerald-950/5 dark:bg-white/10 hover:bg-primary/10 border border-emerald-950/10 dark:border-white/10 dark:text-white px-10 py-4 rounded-xl font-extrabold text-lg transition-all backdrop-blur-sm">
               {t('hero.contactUs')}
             </button>
           </div>

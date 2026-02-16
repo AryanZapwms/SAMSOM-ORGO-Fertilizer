@@ -29,7 +29,7 @@ const Benefits: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-white dark:bg-emerald-950/20 relative">
+    <section className="py-24 bg-white dark:bg-emerald-950/20 relative dark:text-white">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-4xl font-extrabold mb-4">{t('benefits.title')}</h2>

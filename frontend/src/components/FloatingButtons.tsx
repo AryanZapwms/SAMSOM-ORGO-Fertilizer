@@ -14,12 +14,12 @@ const FloatingButtons: React.FC<FloatingButtonsProps> = ({ darkMode, toggleDarkM
       {/* Language Toggle */}
       <button
         onClick={toggleLanguage}
-        className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white shadow-lg hover:shadow-xl transition-all group relative"
+        className="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white shadow-lg hover:shadow-xl transition-all group relative"
         aria-label={`Change language to ${language === 'en' ? 'Marathi' : 'English'}`}
         title={language === 'en' ? 'मराठी मध्ये बदला' : 'Switch to English'}
       >
-        <span className="text-sm font-bold">
-          {language === 'en' ? 'मर' : 'EN'}
+        <span className="text-sm font-bold ">
+          {language === 'en' ? 'मराठी' : 'ENGLISH'}
         </span>
       </button>
       
