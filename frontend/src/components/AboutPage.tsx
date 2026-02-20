@@ -78,7 +78,7 @@ const AboutPage: React.FC = () => {
           {/* Why Vermicompost is Important */}
           <div className="mb-20">
             <h2 className="text-4xl font-extrabold mb-8 text-center text-emerald-900 dark:text-white">
-              {t('about.whyInSoil.title', 'Why Vermicompost is Used in Soil')}
+              {t('about.whyInSoil.title', 'Why is vermicompost essential for the soil')}
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
@@ -146,8 +146,16 @@ const AboutPage: React.FC = () => {
                   {t('about.samson.title', 'Why Choose Samson Orgo Fertilizer?')}
                 </h2>
                 <p className="text-lg text-emerald-800/70 dark:text-emerald-100/60 mb-4 leading-relaxed">
-                  {t('about.samson.p1', 'Our organic vermicompost is produced exclusively from cow dung using Eisenia Fetida earthworms. Rich in humus, NPK, micronutrients, and beneficial soil microbes including nitrogen-fixing and phosphate-solubilizing bacteria.')}
-                </p>
+  Our organic vermicompost is produced exclusively from{' '}
+  <span className="font-bold text-emerald-900 dark:text-emerald-200 bg-emerald-100/60 dark:bg-emerald-800/40 px-1 rounded">
+    cow dung
+  </span>{' '}
+  using{' '}
+  <span className="font-bold italic text-red-400 dark:text-emerald-200">
+    Eisenia Fetida
+  </span>{' '}
+  earthworms. Rich in humus, NPK, micronutrients, and beneficial soil microbes including nitrogen-fixing and phosphate-solubilizing bacteria.
+</p>
                 <p className="text-lg text-emerald-800/70 dark:text-emerald-100/60 leading-relaxed">
                   {t('about.samson.p2', 'Scientifically proven to satisfy all parameters required for both growth promotion and plant protection. An excellent fit for farmers seeking sustainable, high-yield solutions.')}
                 </p>

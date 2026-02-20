@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
       
       <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
         <div className="max-w-2xl">
-          <span className="inline-block py-1 px-3 rounded-full bg-primary/20 text-primary font-bold text-xs tracking-wider uppercase mb-6">
+          <span className="inline-block py-1  px-3 rounded-full bg-primary/20 text-green-700 font-bold text-xs tracking-wider uppercase mb-6">
             {t('hero.tagline')}
           </span>
           
@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
             <span className="text-primary">{t('hero.titleHighlight')}</span>
           </h1>
           
-          <p className="text-lg text-emerald-800/80 dark:text-emerald-100/60 mb-10 leading-relaxed max-w-lg">
+          <p className="text-lg text-emerald-800/80  dark:text-emerald-100/60 mb-10 leading-relaxed max-w-lg font-bold">
             {t('hero.description')}
           </p>
           

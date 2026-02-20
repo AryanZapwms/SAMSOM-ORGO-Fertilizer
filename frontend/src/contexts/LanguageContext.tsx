@@ -15,7 +15,7 @@ const translations = {
   en: {
     // Navigation
     'nav.benefits': 'Benefits',
-    'nav.ourStory': 'Our Story',
+    'nav.ourStory': 'About Us',
     'nav.specifications': 'Specifications',
     'nav.contact': 'Contact',
     
@@ -23,12 +23,12 @@ const translations = {
     'hero.tagline': '100% Organic Earth-Friendly',
     'hero.title': 'SAMSON ORGO',
     'hero.titleHighlight': 'Where Nature Meets Growth',
-    'hero.description': 'Premium organic vermicompost crafted for sustainable growth and vibrant indoor gardens. Give your leafy friends the nutrients they deserve.',
+    'hero.description': 'Premium organic vermicompost crafted for sustainable agriculture growth and vibrant indoor gardens. Give your leafy friends the nutrients they deserve.',
     'hero.learnMore': 'Learn More',
     'hero.contactUs': 'Contact Us',
     
     // Target Audience
-    'target.title': 'Perfect Organic Vermicompost Fertilizer for:',
+    'target.title': 'An excellent choice for cultivating:',
     'target.description': 'Our premium vermicompost is scientifically formulated to provide optimal nutrition for all types of plants, ensuring healthier growth and higher yields across different growing environments.',
     'target.veg': 'Vegetables',
     'target.fruits': 'Fruits',
@@ -147,7 +147,7 @@ const translations = {
     'footer.terms': 'Terms of Service',
     
     // About Page (Expanded)
-    'about.hero.title': 'Our Story',
+    'about.hero.title': 'About Us',
     'about.hero.desc': 'Cultivating a greener future through premium organic waste transformation',
     'about.mission.title': 'Our Mission',
     'about.mission.desc': 'To revolutionize agriculture by providing scientifically-proven organic solutions that respect nature\'s rhythm while delivering exceptional plant growth and soil health.',
@@ -156,7 +156,7 @@ const translations = {
     'about.whatIs.title': 'What is Vermicompost?',
     'about.whatIs.p1': 'Vermicompost is a nutrient-rich, organic fertilizer and soil conditioner produced by the natural decomposition of organic materials (cow dung, food scraps, yard waste) using earthworms, typically red wigglers, and microorganisms.',
     'about.whatIs.p2': 'Often called "black gold," this humus-like material improves soil structure, enhances water retention, and provides essential, balanced nutrients for stronger plant growth and higher yields.',
-    'about.whyInSoil.title': 'Why Vermicompost is Used in Soil',
+    'about.whyInSoil.title': 'Why is vermicompost essential for the soil',
     'about.whyInSoil.item1.title': 'Improves Soil Fertility',
     'about.whyInSoil.item1.desc': 'Enriches soil with essential macro and micronutrients that are released slowly, ensuring continuous SAMSON ORGOment without nutrient loss.',
     'about.whyInSoil.item2.title': 'Enhances Soil Structure',
@@ -170,14 +170,15 @@ const translations = {
     'about.whyInSoil.item6.title': 'Universal Application',
     'about.whyInSoil.item6.desc': 'Safe for all crops, horticulture, home gardens, nurseries, lawns, and potted plants at any growth stage.',
     'about.samson.title': 'Why Choose Samson Orgo Fertilizer?',
-    'about.samson.p1': 'Our organic vermicompost is produced exclusively from cow dung using Eisenia Fetida earthworms. Rich in humus, NPK, micronutrients, and beneficial soil microbes including nitrogen-fixing and phosphate-solubilizing bacteria.',
+  'about.samson.p1': 
+'Our organic vermicompost is produced exclusively from <cow>cow dung</cow> using <worm>Eisenia Fetida</worm> earthworms. Rich in humus, NPK, micronutrients, and beneficial soil microbes including nitrogen-fixing and phosphate-solubilizing bacteria.',
     'about.samson.p2': 'Scientifically proven to satisfy all parameters required for both growth promotion and plant protection. An excellent fit for farmers seeking sustainable, high-yield solutions.',
     'about.cert.title': 'Certified Quality',
     'about.cta': 'Back to Home',
 
     // Contact Page (Expanded)
     'contact.hero.title': 'Contact Us',
-    'contact.hero.desc': 'Get in touch with our team for inquiries, support, or partnership opportunities',
+    'contact.hero.desc': 'Get in touch with our team for inquiries, support, and partnership opportunities',
     'contact.info.title': 'Get in Touch',
     'contact.info.location.title': 'Our Location',
     'contact.info.location.address': '123 Organic Lane, Greenfield, CA 90210, Maharashtra, India',
@@ -395,7 +396,8 @@ const translations = {
     'about.whyInSoil.item6.title': 'सर्वत्र उपयुक्त',
     'about.whyInSoil.item6.desc': 'शेती, फळबागा, घरगुती बागा, रोपवाटिका आणि कुंड्यांसाठी पूर्णपणे सुरक्षित.',
     'about.samson.title': 'सॅमसन ऑर्गो फर्टिलायझर का निवडावे?',
-    'about.samson.p1': 'आमचे सेंद्रिय वर्मीकंपोस्ट फक्त गाईच्या शेणापासून \'आयसेनिया फेटिडा\' गांडुळांचा वापर करून तयार केले जाते. यात बुरशी (humus), एनपीके आणि उपयुक्त सूक्ष्मजीव भरपूर प्रमाणात असतात.',
+    'about.samson.p1': 
+'आमचे सेंद्रिय वर्मीकंपोस्ट फक्त <cow>गाईच्या शेणापासून</cow> <worm>आयसेनिया फेटिडा</worm> गांडुळांचा वापर करून तयार केले जाते...',
     'about.samson.p2': 'हे खत शास्त्रीयदृष्ट्या प्रमाणित असून झाडांच्या वाढीसाठी आणि संरक्षणासाठी परिपूर्ण आहे. शाश्वत शेतीसाठी हा एक उत्तम पर्याय आहे.',
     'about.cert.title': 'प्रमाणित गुणवत्ता',
     'about.cta': 'मुख्य पृष्ठावर जा',
@@ -473,16 +475,28 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
   };
 
   const t = (key: string, defaultValue?: string): string => {
-    const langTranslations: Record<string, string> = translations[language];
-    const translation = langTranslations[key];
-    
-    // Handle dynamic values
-    if (key === 'footer.copyright' && translation) {
-      return translation.replace('{year}', new Date().getFullYear().toString());
-    }
-    
-    return translation || defaultValue || key; // Return translation, then defaultValue, then key
-  };
+  const langTranslations: Record<string, string> = translations[language];
+  const translation = langTranslations[key];
+
+  let text = translation || defaultValue || key;
+
+  if (key === 'footer.copyright') {
+    text = text.replace('{year}', new Date().getFullYear().toString());
+  }
+
+  // Replace custom tags with styled spans
+  text = text
+    .replace(
+      /<cow>(.*?)<\/cow>/g,
+      '<span class="bg-emerald-200 text-emerald-900 px-2 py-1 rounded font-semibold">$1</span>'
+    )
+    .replace(
+      /<worm>(.*?)<\/worm>/g,
+      '<span class="italic font-semibold text-emerald-900 underline decoration-emerald-400 underline-offset-4">$1</span>'
+    );
+
+  return text;
+};
 
   return (
     <LanguageContext.Provider value={{ language, toggleLanguage, t }}>

@@ -135,9 +135,10 @@ const AboutPage: React.FC = () => {
                 <h2 className="text-3xl font-bold mb-6 text-emerald-900 dark:text-white">
                   {t('about.samson.title')}
                 </h2>
-                <p className="text-lg text-emerald-800/70 dark:text-emerald-100/60 mb-4 leading-relaxed">
-                  {t('about.samson.p1')}
-                </p>
+                <p
+  className="text-lg text-red dark:text-emerald-100/60 mb-4 leading-relaxed"
+  dangerouslySetInnerHTML={{ __html: t('about.samson.p1') }}
+/>
                 <p className="text-lg text-emerald-800/70 dark:text-emerald-100/60 leading-relaxed">
                   {t('about.samson.p2')}
                 </p>
